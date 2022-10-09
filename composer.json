@@ -1,0 +1,31 @@
+{
+    "name": "eciur/php-skeleton-project",
+    "description": "PHP skeleton",
+    "type": "project",
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "emilisz",
+            "email": "eciurlionis@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {
+        "test-all": [
+            "vendor/bin/phpunit --verbose",
+            "vendor/bin/phpstan analyse src tests"
+        ]
+    }
+}
